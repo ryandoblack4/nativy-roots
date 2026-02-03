@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Native Roots | Açaí Artesanal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1 class="brand">NATIVY ROOTS</h1>
+    <p>Açaí artesanal • Energia natural 🍧</p>
+
+    <span class="trust">
+      ⭐⭐⭐⭐⭐ Pedidos diários • Entrega rápida na região
+    </span>
+
+    <div class="hero-buttons">
+      <a href="#" onclick="pedirAgora()" class="btn principal">
+        Fazer meu pedido agora
+      </a>
+
+      <a href="#sabores" class="btn outline">
+        Ver cardápio
+      </a>
+    </div>
+  </section>
+
+  <!-- SABORES -->
+  <section id="sabores" class="sabores">
+    <h2>Sabores Disponíveis</h2>
+    <p class="sub">Escolha seu favorito ou experimente todos</p>
+
+    <div class="grid">
+
+      <!-- CARD 1 -->
+      <div class="card">
+        <div class="img">
+          <img src="Acai-tradicional.png" alt="Açaí Tradicional">
+        </div>
+        <h3>Açaí Tradicional</h3>
+        <p>Puro, cremoso e energético</p>
+        <button onclick="pedirSabor('Açaí Tradicional')">
+          Pedir este sabor
+        </button>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card">
+        <div class="img">
+          <img src="Acai-com-morango.jpg" alt="Açaí com Morango">
+        </div>
+        <h3>Açaí com Morango</h3>
+        <p>Doce natural e refrescante</p>
+        <button onclick="pedirSabor('Açaí com Morango')">
+          Pedir este sabor
+        </button>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card">
+        <div class="img">
+          <img src="A.jpg" alt="Açaí com Banana">
+        </div>
+        <h3>Açaí com Banana</h3>
+        <p>Clássico e nutritivo</p>
+        <button onclick="pedirSabor('Açaí com Banana')">
+          Pedir este sabor
+        </button>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="card">
+        <div class="img">
+          <img src="Acai-com-ninho.jpg" alt="Açaí com Ninho">
+        </div>
+        <h3>Açaí com Ninho</h3>
+        <p>Ultra cremoso e irresistível</p>
+        <button onclick="pedirSabor('Açaí com Ninho')">
+          Pedir este sabor
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta">
+    <h2>Peça agora e receba em casa 🚀</h2>
+
+    <div class="cta-buttons">
+      <a href="#" onclick="pedirAgora()" class="btn whatsapp">
+        WhatsApp
+      </a>
+
+      <a href="https://ig.me/m/SEUINSTAGRAM" target="_blank" class="btn instagram">
+        Instagram
+      </a>
+    </div>
+  </section>
+
+  <!-- BOTÃO FLUTUANTE -->
+  <a href="#" onclick="pedirAgora()" class="whatsapp-float">
+    💬
+  </a>
+
+  <!-- SCRIPT -->
+  <script>
+    const numero = "5575998112168"; // TROQUE PELO SEU NÚMERO
+
+    function whatsappLink(msg) {
+      return `https://wa.me/${numero}?text=${encodeURIComponent(msg)}`;
+    }
+
+    function pedirAgora() {
+      window.open(
+        whatsappLink("Olá! Quero fazer um pedido 🍧"),
+        "_blank"
+      );
+    }
+
+    function pedirSabor(sabor) {
+      window.open(
+        whatsappLink(`Olá! Quero pedir o sabor ${sabor} 🍧`),
+        "_blank"
+      );
+    }
+  </script>
+
+</body>
+</html>
