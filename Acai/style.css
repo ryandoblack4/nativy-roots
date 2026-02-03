@@ -6,7 +6,7 @@
 }
 
 body {
-  scroll-behavior: smooth;
+  background: lime !important;
 }
 
 /* HERO COM IMAGEM */
